@@ -15,8 +15,16 @@ public class MessageController {
 		return "index";
 	}
 
-	
-	// BUG - 130
+	// bug 124
+
+	@GetMapping("/hello")
+	public String getWelcomeMsg(Model model) {
+
+		model.addAttribute("msg", "Welcome T");
+
+		return "index";
+	}
+
 
 	@GetMapping("/greet")
 	public String getGreetMsg(Model model) {
