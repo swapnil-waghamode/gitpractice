@@ -21,6 +21,7 @@ public class MessageController {
 	@GetMapping("/greet")
 	public String getGreetMsg(Model model) {
 
-		// In progrees
+		model.addAttribute("msg", "Hello Good Morning!");
+		return "index";
 	}
 }
