@@ -16,7 +16,7 @@ public class MessageController {
 	}
 
 	
-	// BUG - 123
+	// BUG - 130
 
 	@GetMapping("/greet")
 	public String getGreetMsg(Model model) {
